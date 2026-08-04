@@ -19,16 +19,15 @@ Depends on: /design/spec-shared.md
 - Gap/spacing between child elements (reference tokens from spec-shared.md where they match a token, exact px if not):
 - Typography (reference tokens):
 - Colors (reference tokens — do not repeat hex values here):
-- Components/states:
+- Components used (reference by name from spec-shared.md's Shared components section — do not redefine inline):
 - Assets needed:
 
 <!-- Repeat the block above per element within this section if measurements differ per element, not just once per section -->
 
 ## Responsive behavior
 
-<!-- Breakpoint-specific changes, if any -->
+<!-- Per breakpoint from spec-shared.md's Breakpoints table, describe what changes for this page's sections: which elements stack/reflow/hide/resize, with exact values (not "becomes smaller" — give the actual size). If nothing changes at a breakpoint for this page, say so explicitly rather than leaving it blank. -->
 
 ## Open questions
 
-## Open questions
 <!-- Anything ambiguous or missing — coding-agent must not guess these, escalate instead -->

@@ -11,3 +11,10 @@
 ## Measurement tolerance
 
 - Width, height, padding, and margin must match the spec within ±1px. Treat anything beyond that as a fail — don't average it out as "close enough."
+
+## Content and asset checks
+
+- Every image must trace to an asset actually exported from Figma, or be a plain placeholder — flag anything else (stock photos, generated images, unexplained real photography) as a fail.
+- Every piece of text (emails, addresses, numbers, names) must exactly match the spec — flag any deviation, however minor.
+- Every button/input instance must match its named component definition in spec-shared.md — flag any instance that was styled independently instead of matching the shared definition.
+

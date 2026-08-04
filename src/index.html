@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +28,7 @@
 </div>
 
 <!-- Main header / navigation -->
-<header class="site-header">
+<div class="site-header">
   <div class="site-header__inner">
     <a class="logo" href="index.html">
       <img class="logo__mark" src="assets/logo.png" alt="Rudra Portable Cabins logo" />
@@ -37,7 +37,15 @@
         <span class="logo__tagline">Rudra Portable Cabins</span>
       </span>
     </a>
-    <nav class="main-nav" aria-label="Primary">
+    <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+      <span class="visually-hidden">Open navigation menu</span>
+      <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M4 7H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <div id="main-navigation" class="main-nav" role="navigation" aria-label="Primary">
       <a class="main-nav__link" href="index.html">Home</a>
       <a class="main-nav__link" href="#about">About Us</a>
       <a class="main-nav__link main-nav__link--dropdown" href="#products">
@@ -47,16 +55,16 @@
         </svg>
       </a>
       <a class="btn btn--primary" href="#contact">Contact Us</a>
-    </nav>
+    </div>
   </div>
-</header>
+</div>
 
-<main>
+<div class="page-main">
 
   <!-- Hero carousel -->
-  <section class="hero" aria-roledescription="carousel" aria-label="Featured highlights">
+  <div class="hero" aria-roledescription="carousel" aria-label="Featured highlights">
     <div class="hero__slide is-active" style="background-image: url('assets/photo-1.jpeg');">
-      <div class="container hero__content">
+      <div class="hero__content">
         <h1 class="hero__title">Innovation in Modular Living</h1>
         <p class="hero__subtitle">Strong, Reliable &amp; Modern Portable Cabin Solutions</p>
         <a class="btn btn--primary" href="#products">
@@ -69,7 +77,7 @@
       </div>
     </div>
     <div class="hero__slide" style="background-image: url('assets/photo-3.jpeg');">
-      <div class="container hero__content">
+      <div class="hero__content">
         <h1 class="hero__title">Engineering Precision</h1>
         <p class="hero__subtitle">Built for Efficiency, Comfort &amp; Scalability</p>
         <a class="btn btn--primary" href="#about">
@@ -82,7 +90,7 @@
       </div>
     </div>
     <div class="hero__slide" style="background-image: url('assets/photo-4.jpeg');">
-      <div class="container hero__content">
+      <div class="hero__content">
         <h1 class="hero__title">Trusted Manufacturing Excellence</h1>
         <p class="hero__subtitle">15+ Years Delivering Modular Construction Solutions</p>
         <a class="btn btn--primary" href="#">
@@ -99,10 +107,10 @@
       <button class="hero__dot" type="button" aria-label="Go to slide 2" data-slide-index="1"></button>
       <button class="hero__dot" type="button" aria-label="Go to slide 3" data-slide-index="2"></button>
     </div>
-  </section>
+  </div>
 
   <!-- Intro section -->
-  <section class="intro" id="about">
+  <div class="intro" id="about">
     <div class="container intro__grid">
       <div class="intro__copy">
         <h2 class="intro__heading">Strength, Mobility &amp; Modern Modular Living</h2>
@@ -111,8 +119,8 @@
         <div class="stat-grid">
           <div class="stat">
             <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M21.801 10C22.2577 12.2413 21.9322 14.5714 20.8789 16.6018C19.8255 18.6322 18.1079 20.2401 16.0125 21.1573C13.9171 22.0746 11.5706 22.2458 9.3643 21.6424C7.15797 21.039 5.22519 19.6974 3.88828 17.8414C2.55136 15.9854 1.89112 13.7272 2.01766 11.4434C2.14421 9.15953 3.04988 6.98809 4.58365 5.29117C6.11742 3.59425 8.18658 2.47443 10.4461 2.11845C12.7056 1.76248 15.0188 2.19186 17 3.335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>
               <span class="stat__number">15+ Years</span>
@@ -121,8 +129,9 @@
           </div>
           <div class="stat">
             <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M21.801 10C22.2577 12.2413 21.9322 14.5714 20.8789 16.6018C19.8255 18.6322 18.1079 20.2401 16.0125 21.1573C13.9171 22.0746 11.5706 22.2458 9.3643 21.6424C7.15797 21.039 5.22519 19.6974 3.88828 17.8414C2.55136 15.9854 1.89112 13.7272 2.01766 11.4434C2.14421 9.15953 3.04988 6.98809 4.58365 5.29117C6.11742 3.59425 8.18658 2.47443 10.4461 2.11845C12.7056 1.76248 15.0188 2.19186 17 3.335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M7 6V4H17V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M7 12H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
             <span>
               <span class="stat__number">5000+</span>
@@ -131,8 +140,9 @@
           </div>
           <div class="stat">
             <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M21.801 10C22.2577 12.2413 21.9322 14.5714 20.8789 16.6018C19.8255 18.6322 18.1079 20.2401 16.0125 21.1573C13.9171 22.0746 11.5706 22.2458 9.3643 21.6424C7.15797 21.039 5.22519 19.6974 3.88828 17.8414C2.55136 15.9854 1.89112 13.7272 2.01766 11.4434C2.14421 9.15953 3.04988 6.98809 4.58365 5.29117C6.11742 3.59425 8.18658 2.47443 10.4461 2.11845C12.7056 1.76248 15.0188 2.19186 17 3.335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 3L5 7V17L12 21L19 17V7L12 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 9V13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 16H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
             <span>
               <span class="stat__number">ISO Certified</span>
@@ -141,8 +151,8 @@
           </div>
           <div class="stat">
             <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M21.801 10C22.2577 12.2413 21.9322 14.5714 20.8789 16.6018C19.8255 18.6322 18.1079 20.2401 16.0125 21.1573C13.9171 22.0746 11.5706 22.2458 9.3643 21.6424C7.15797 21.039 5.22519 19.6974 3.88828 17.8414C2.55136 15.9854 1.89112 13.7272 2.01766 11.4434C2.14421 9.15953 3.04988 6.98809 4.58365 5.29117C6.11742 3.59425 8.18658 2.47443 10.4461 2.11845C12.7056 1.76248 15.0188 2.19186 17 3.335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 21C12 21 6 15.8421 6 11.25C6 8.149 8.385 5.75 11.25 5.75C14.115 5.75 16.5 8.149 16.5 11.25C16.5 15.8421 12 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="11.25" cy="11.25" r="1.75" fill="currentColor"/>
             </svg>
             <span>
               <span class="stat__number">Pan India</span>
@@ -162,10 +172,10 @@
         <img class="intro__image" src="assets/photo-2.jpeg" alt="Modular cabin production line inside our manufacturing facility" />
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Products & Services grid -->
-  <section class="products" id="products">
+  <div class="products" id="products">
     <div class="container">
       <div class="section-heading">
         <h2 class="section-heading__title">Our Products &amp; Services</h2>
@@ -173,7 +183,7 @@
       </div>
       <div class="product-grid">
 
-        <article class="product-card">
+        <div class="product-card">
           <img class="product-card__image" src="assets/photo-4.jpeg" alt="Portable office cabin exterior" />
           <div class="product-card__body">
             <span class="product-card__eyebrow">Portable Cabins</span>
@@ -187,9 +197,9 @@
               </svg>
             </a>
           </div>
-        </article>
+        </div>
 
-        <article class="product-card">
+        <div class="product-card">
           <img class="product-card__image" src="assets/photo-6.jpeg" alt="Security guard cabin unit" />
           <div class="product-card__body">
             <span class="product-card__eyebrow">Security Cabins</span>
@@ -203,9 +213,9 @@
               </svg>
             </a>
           </div>
-        </article>
+        </div>
 
-        <article class="product-card">
+        <div class="product-card">
           <img class="product-card__image" src="assets/photo-3.jpeg" alt="Marine shipping container unit" />
           <div class="product-card__body">
             <span class="product-card__eyebrow">Marine Containers</span>
@@ -219,9 +229,9 @@
               </svg>
             </a>
           </div>
-        </article>
+        </div>
 
-        <article class="product-card">
+        <div class="product-card">
           <img class="product-card__image" src="assets/photo-2.jpeg" alt="Portable toilet cabin unit" />
           <div class="product-card__body">
             <span class="product-card__eyebrow">Toilet Cabins</span>
@@ -235,9 +245,9 @@
               </svg>
             </a>
           </div>
-        </article>
+        </div>
 
-        <article class="product-card">
+        <div class="product-card">
           <img class="product-card__image" src="assets/photo-5.jpeg" alt="Pre-fabricated building structure" />
           <div class="product-card__body">
             <span class="product-card__eyebrow">Pre-Fabricated Buildings</span>
@@ -251,9 +261,9 @@
               </svg>
             </a>
           </div>
-        </article>
+        </div>
 
-        <article class="product-card">
+        <div class="product-card">
           <img class="product-card__image" src="assets/photo-1.jpeg" alt="PUF panel cabin unit" />
           <div class="product-card__body">
             <span class="product-card__eyebrow">PUF Panel Cabins</span>
@@ -267,7 +277,7 @@
               </svg>
             </a>
           </div>
-        </article>
+        </div>
 
       </div>
       <div class="products__cta">
@@ -280,10 +290,10 @@
         </a>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Interior Solutions -->
-  <section class="interior">
+  <div class="interior">
     <div class="container interior__grid">
       <div class="interior__copy">
         <h2 class="interior__heading">Portable Cabin Interior Solutions</h2>
@@ -324,10 +334,10 @@
         <img class="interior__image" src="assets/photo-3.jpeg" alt="Interior fit-out of a portable cabin facility" />
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Testimonials -->
-  <section class="testimonials">
+  <div class="testimonials">
     <div class="container">
       <div class="section-heading">
         <h2 class="section-heading__title">What Our Clients Say</h2>
@@ -335,7 +345,7 @@
       </div>
       <div class="testimonial-grid">
 
-        <article class="testimonial-card">
+        <div class="testimonial-card">
           <div class="testimonial-card__stars">
             <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9.60419 1.91241C9.64071 1.83863 9.69713 1.77652 9.76707 1.7331C9.83701 1.68968 9.9177 1.66667 10 1.66667C10.0824 1.66667 10.163 1.68968 10.233 1.7331C10.3029 1.77652 10.3593 1.83863 10.3959 1.91241L12.3209 5.81158C12.4477 6.06822 12.6349 6.29025 12.8664 6.45862C13.0979 6.62699 13.3668 6.73667 13.65 6.77824L17.955 7.40824C18.0366 7.42006 18.1132 7.45447 18.1763 7.50758C18.2393 7.56068 18.2862 7.63037 18.3117 7.70875C18.3372 7.78713 18.3403 7.87108 18.3205 7.95111C18.3008 8.03113 18.259 8.10404 18.2 8.16158L15.0867 11.1932C14.8814 11.3933 14.7278 11.6403 14.6391 11.9129C14.5504 12.1856 14.5292 12.4757 14.5775 12.7582L15.3125 17.0416C15.3269 17.1231 15.3181 17.207 15.2871 17.2838C15.2561 17.3606 15.2041 17.4271 15.1371 17.4757C15.0702 17.5244 14.9908 17.5532 14.9082 17.559C14.8257 17.5647 14.7431 17.5472 14.67 17.5082L10.8217 15.4849C10.5681 15.3518 10.286 15.2822 9.99961 15.2822C9.71321 15.2822 9.43109 15.3518 9.17752 15.4849L5.33002 17.5082C5.25697 17.5469 5.17452 17.5643 5.09207 17.5585C5.00961 17.5526 4.93046 17.5237 4.8636 17.4751C4.79675 17.4265 4.74489 17.3601 4.71391 17.2834C4.68292 17.2068 4.67407 17.123 4.68836 17.0416L5.42252 12.7591C5.47102 12.4764 5.45001 12.1861 5.36131 11.9133C5.2726 11.6405 5.11887 11.3934 4.91336 11.1932L1.80002 8.16241C1.74052 8.10494 1.69835 8.03191 1.67833 7.95164C1.6583 7.87137 1.66122 7.78709 1.68676 7.7084C1.71229 7.62971 1.75941 7.55978 1.82276 7.50656C1.8861 7.45335 1.96311 7.41899 2.04502 7.40741L6.34919 6.77824C6.63274 6.73699 6.90202 6.62746 7.13384 6.45907C7.36567 6.29068 7.55311 6.06847 7.68002 5.81158L9.60419 1.91241Z" fill="currentColor" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9.60419 1.91241C9.64071 1.83863 9.69713 1.77652 9.76707 1.7331C9.83701 1.68968 9.9177 1.66667 10 1.66667C10.0824 1.66667 10.163 1.68968 10.233 1.7331C10.3029 1.77652 10.3593 1.83863 10.3959 1.91241L12.3209 5.81158C12.4477 6.06822 12.6349 6.29025 12.8664 6.45862C13.0979 6.62699 13.3668 6.73667 13.65 6.77824L17.955 7.40824C18.0366 7.42006 18.1132 7.45447 18.1763 7.50758C18.2393 7.56068 18.2862 7.63037 18.3117 7.70875C18.3372 7.78713 18.3403 7.87108 18.3205 7.95111C18.3008 8.03113 18.259 8.10404 18.2 8.16158L15.0867 11.1932C14.8814 11.3933 14.7278 11.6403 14.6391 11.9129C14.5504 12.1856 14.5292 12.4757 14.5775 12.7582L15.3125 17.0416C15.3269 17.1231 15.3181 17.207 15.2871 17.2838C15.2561 17.3606 15.2041 17.4271 15.1371 17.4757C15.0702 17.5244 14.9908 17.5532 14.9082 17.559C14.8257 17.5647 14.7431 17.5472 14.67 17.5082L10.8217 15.4849C10.5681 15.3518 10.286 15.2822 9.99961 15.2822C9.71321 15.2822 9.43109 15.3518 9.17752 15.4849L5.33002 17.5082C5.25697 17.5469 5.17452 17.5643 5.09207 17.5585C5.00961 17.5526 4.93046 17.5237 4.8636 17.4751C4.79675 17.4265 4.74489 17.3601 4.71391 17.2834C4.68292 17.2068 4.67407 17.123 4.68836 17.0416L5.42252 12.7591C5.47102 12.4764 5.45001 12.1861 5.36131 11.9133C5.2726 11.6405 5.11887 11.3934 4.91336 11.1932L1.80002 8.16241C1.74052 8.10494 1.69835 8.03191 1.67833 7.95164C1.6583 7.87137 1.66122 7.78709 1.68676 7.7084C1.71229 7.62971 1.75941 7.55978 1.82276 7.50656C1.8861 7.45335 1.96311 7.41899 2.04502 7.40741L6.34919 6.77824C6.63274 6.73699 6.90202 6.62746 7.13384 6.45907C7.36567 6.29068 7.55311 6.06847 7.68002 5.81158L9.60419 1.91241Z" fill="currentColor" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -348,9 +358,9 @@
             <div class="testimonial-card__name">Rajesh Kumar</div>
             <div class="testimonial-card__role">Project Manager, ABC Construction Ltd.</div>
           </div>
-        </article>
+        </div>
 
-        <article class="testimonial-card">
+        <div class="testimonial-card">
           <div class="testimonial-card__stars">
             <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9.60419 1.91241C9.64071 1.83863 9.69713 1.77652 9.76707 1.7331C9.83701 1.68968 9.9177 1.66667 10 1.66667C10.0824 1.66667 10.163 1.68968 10.233 1.7331C10.3029 1.77652 10.3593 1.83863 10.3959 1.91241L12.3209 5.81158C12.4477 6.06822 12.6349 6.29025 12.8664 6.45862C13.0979 6.62699 13.3668 6.73667 13.65 6.77824L17.955 7.40824C18.0366 7.42006 18.1132 7.45447 18.1763 7.50758C18.2393 7.56068 18.2862 7.63037 18.3117 7.70875C18.3372 7.78713 18.3403 7.87108 18.3205 7.95111C18.3008 8.03113 18.259 8.10404 18.2 8.16158L15.0867 11.1932C14.8814 11.3933 14.7278 11.6403 14.6391 11.9129C14.5504 12.1856 14.5292 12.4757 14.5775 12.7582L15.3125 17.0416C15.3269 17.1231 15.3181 17.207 15.2871 17.2838C15.2561 17.3606 15.2041 17.4271 15.1371 17.4757C15.0702 17.5244 14.9908 17.5532 14.9082 17.559C14.8257 17.5647 14.7431 17.5472 14.67 17.5082L10.8217 15.4849C10.5681 15.3518 10.286 15.2822 9.99961 15.2822C9.71321 15.2822 9.43109 15.3518 9.17752 15.4849L5.33002 17.5082C5.25697 17.5469 5.17452 17.5643 5.09207 17.5585C5.00961 17.5526 4.93046 17.5237 4.8636 17.4751C4.79675 17.4265 4.74489 17.3601 4.71391 17.2834C4.68292 17.2068 4.67407 17.123 4.68836 17.0416L5.42252 12.7591C5.47102 12.4764 5.45001 12.1861 5.36131 11.9133C5.2726 11.6405 5.11887 11.3934 4.91336 11.1932L1.80002 8.16241C1.74052 8.10494 1.69835 8.03191 1.67833 7.95164C1.6583 7.87137 1.66122 7.78709 1.68676 7.7084C1.71229 7.62971 1.75941 7.55978 1.82276 7.50656C1.8861 7.45335 1.96311 7.41899 2.04502 7.40741L6.34919 6.77824C6.63274 6.73699 6.90202 6.62746 7.13384 6.45907C7.36567 6.29068 7.55311 6.06847 7.68002 5.81158L9.60419 1.91241Z" fill="currentColor" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9.60419 1.91241C9.64071 1.83863 9.69713 1.77652 9.76707 1.7331C9.83701 1.68968 9.9177 1.66667 10 1.66667C10.0824 1.66667 10.163 1.68968 10.233 1.7331C10.3029 1.77652 10.3593 1.83863 10.3959 1.91241L12.3209 5.81158C12.4477 6.06822 12.6349 6.29025 12.8664 6.45862C13.0979 6.62699 13.3668 6.73667 13.65 6.77824L17.955 7.40824C18.0366 7.42006 18.1132 7.45447 18.1763 7.50758C18.2393 7.56068 18.2862 7.63037 18.3117 7.70875C18.3372 7.78713 18.3403 7.87108 18.3205 7.95111C18.3008 8.03113 18.259 8.10404 18.2 8.16158L15.0867 11.1932C14.8814 11.3933 14.7278 11.6403 14.6391 11.9129C14.5504 12.1856 14.5292 12.4757 14.5775 12.7582L15.3125 17.0416C15.3269 17.1231 15.3181 17.207 15.2871 17.2838C15.2561 17.3606 15.2041 17.4271 15.1371 17.4757C15.0702 17.5244 14.9908 17.5532 14.9082 17.559C14.8257 17.5647 14.7431 17.5472 14.67 17.5082L10.8217 15.4849C10.5681 15.3518 10.286 15.2822 9.99961 15.2822C9.71321 15.2822 9.43109 15.3518 9.17752 15.4849L5.33002 17.5082C5.25697 17.5469 5.17452 17.5643 5.09207 17.5585C5.00961 17.5526 4.93046 17.5237 4.8636 17.4751C4.79675 17.4265 4.74489 17.3601 4.71391 17.2834C4.68292 17.2068 4.67407 17.123 4.68836 17.0416L5.42252 12.7591C5.47102 12.4764 5.45001 12.1861 5.36131 11.9133C5.2726 11.6405 5.11887 11.3934 4.91336 11.1932L1.80002 8.16241C1.74052 8.10494 1.69835 8.03191 1.67833 7.95164C1.6583 7.87137 1.66122 7.78709 1.68676 7.7084C1.71229 7.62971 1.75941 7.55978 1.82276 7.50656C1.8861 7.45335 1.96311 7.41899 2.04502 7.40741L6.34919 6.77824C6.63274 6.73699 6.90202 6.62746 7.13384 6.45907C7.36567 6.29068 7.55311 6.06847 7.68002 5.81158L9.60419 1.91241Z" fill="currentColor" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -363,9 +373,9 @@
             <div class="testimonial-card__name">Priya Sharma</div>
             <div class="testimonial-card__role">Facility Manager, Tech Park Industries</div>
           </div>
-        </article>
+        </div>
 
-        <article class="testimonial-card">
+        <div class="testimonial-card">
           <div class="testimonial-card__stars">
             <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9.60419 1.91241C9.64071 1.83863 9.69713 1.77652 9.76707 1.7331C9.83701 1.68968 9.9177 1.66667 10 1.66667C10.0824 1.66667 10.163 1.68968 10.233 1.7331C10.3029 1.77652 10.3593 1.83863 10.3959 1.91241L12.3209 5.81158C12.4477 6.06822 12.6349 6.29025 12.8664 6.45862C13.0979 6.62699 13.3668 6.73667 13.65 6.77824L17.955 7.40824C18.0366 7.42006 18.1132 7.45447 18.1763 7.50758C18.2393 7.56068 18.2862 7.63037 18.3117 7.70875C18.3372 7.78713 18.3403 7.87108 18.3205 7.95111C18.3008 8.03113 18.259 8.10404 18.2 8.16158L15.0867 11.1932C14.8814 11.3933 14.7278 11.6403 14.6391 11.9129C14.5504 12.1856 14.5292 12.4757 14.5775 12.7582L15.3125 17.0416C15.3269 17.1231 15.3181 17.207 15.2871 17.2838C15.2561 17.3606 15.2041 17.4271 15.1371 17.4757C15.0702 17.5244 14.9908 17.5532 14.9082 17.559C14.8257 17.5647 14.7431 17.5472 14.67 17.5082L10.8217 15.4849C10.5681 15.3518 10.286 15.2822 9.99961 15.2822C9.71321 15.2822 9.43109 15.3518 9.17752 15.4849L5.33002 17.5082C5.25697 17.5469 5.17452 17.5643 5.09207 17.5585C5.00961 17.5526 4.93046 17.5237 4.8636 17.4751C4.79675 17.4265 4.74489 17.3601 4.71391 17.2834C4.68292 17.2068 4.67407 17.123 4.68836 17.0416L5.42252 12.7591C5.47102 12.4764 5.45001 12.1861 5.36131 11.9133C5.2726 11.6405 5.11887 11.3934 4.91336 11.1932L1.80002 8.16241C1.74052 8.10494 1.69835 8.03191 1.67833 7.95164C1.6583 7.87137 1.66122 7.78709 1.68676 7.7084C1.71229 7.62971 1.75941 7.55978 1.82276 7.50656C1.8861 7.45335 1.96311 7.41899 2.04502 7.40741L6.34919 6.77824C6.63274 6.73699 6.90202 6.62746 7.13384 6.45907C7.36567 6.29068 7.55311 6.06847 7.68002 5.81158L9.60419 1.91241Z" fill="currentColor" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9.60419 1.91241C9.64071 1.83863 9.69713 1.77652 9.76707 1.7331C9.83701 1.68968 9.9177 1.66667 10 1.66667C10.0824 1.66667 10.163 1.68968 10.233 1.7331C10.3029 1.77652 10.3593 1.83863 10.3959 1.91241L12.3209 5.81158C12.4477 6.06822 12.6349 6.29025 12.8664 6.45862C13.0979 6.62699 13.3668 6.73667 13.65 6.77824L17.955 7.40824C18.0366 7.42006 18.1132 7.45447 18.1763 7.50758C18.2393 7.56068 18.2862 7.63037 18.3117 7.70875C18.3372 7.78713 18.3403 7.87108 18.3205 7.95111C18.3008 8.03113 18.259 8.10404 18.2 8.16158L15.0867 11.1932C14.8814 11.3933 14.7278 11.6403 14.6391 11.9129C14.5504 12.1856 14.5292 12.4757 14.5775 12.7582L15.3125 17.0416C15.3269 17.1231 15.3181 17.207 15.2871 17.2838C15.2561 17.3606 15.2041 17.4271 15.1371 17.4757C15.0702 17.5244 14.9908 17.5532 14.9082 17.559C14.8257 17.5647 14.7431 17.5472 14.67 17.5082L10.8217 15.4849C10.5681 15.3518 10.286 15.2822 9.99961 15.2822C9.71321 15.2822 9.43109 15.3518 9.17752 15.4849L5.33002 17.5082C5.25697 17.5469 5.17452 17.5643 5.09207 17.5585C5.00961 17.5526 4.93046 17.5237 4.8636 17.4751C4.79675 17.4265 4.74489 17.3601 4.71391 17.2834C4.68292 17.2068 4.67407 17.123 4.68836 17.0416L5.42252 12.7591C5.47102 12.4764 5.45001 12.1861 5.36131 11.9133C5.2726 11.6405 5.11887 11.3934 4.91336 11.1932L1.80002 8.16241C1.74052 8.10494 1.69835 8.03191 1.67833 7.95164C1.6583 7.87137 1.66122 7.78709 1.68676 7.7084C1.71229 7.62971 1.75941 7.55978 1.82276 7.50656C1.8861 7.45335 1.96311 7.41899 2.04502 7.40741L6.34919 6.77824C6.63274 6.73699 6.90202 6.62746 7.13384 6.45907C7.36567 6.29068 7.55311 6.06847 7.68002 5.81158L9.60419 1.91241Z" fill="currentColor" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -377,14 +387,14 @@
             <div class="testimonial-card__name">Amit Patel</div>
             <div class="testimonial-card__role">Operations Head, Global Logistics</div>
           </div>
-        </article>
+        </div>
 
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Trusted by Leading Organizations -->
-  <section class="trusted">
+  <div class="trusted">
     <div class="container">
       <div class="section-heading">
         <h2 class="section-heading__title">Trusted by Leading Organizations</h2>
@@ -400,10 +410,10 @@
         <div class="trusted-grid__item">Reliance Infrastructure</div>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- CTA banner -->
-  <section class="cta" id="contact">
+  <div class="cta" id="contact">
     <div class="container">
       <h2 class="cta__heading">Ready to Get Started?</h2>
       <p class="cta__paragraph">Contact us today for a free consultation and quote.</p>
@@ -415,24 +425,24 @@
         </svg>
       </a>
     </div>
-  </section>
+  </div>
 
   <!-- Newsletter strip -->
-  <section class="newsletter">
+  <div class="newsletter">
     <div class="container">
       <h3 class="newsletter__heading">Subscribe to Our Newsletter</h3>
       <p class="newsletter__subtitle">Get updates on new products and special offers</p>
       <form class="newsletter-form" id="newsletter-form">
-        <input class="newsletter-form__input" type="email" name="email" placeholder="Enter your email" required aria-label="Email address" />
+        <input class="newsletter-form__input" type="email" name="email" placeholder="Enter your email" required="required" aria-label="Email address" />
         <button class="newsletter-form__submit" type="submit">Subscribe</button>
       </form>
     </div>
-  </section>
+  </div>
 
-</main>
+</div>
 
 <!-- Footer -->
-<footer class="site-footer">
+<div class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
       <div class="footer-brand__logo">
@@ -515,13 +525,13 @@
   </div>
 
   <div class="container footer-bottom">
-    <span>&copy; 2026 Rudra Portable Cabin. All rights reserved.</span>
+    <span>&#169; 2026 Rudra Portable Cabin. All rights reserved.</span>
     <div class="footer-bottom__links">
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
     </div>
   </div>
-</footer>
+</div>
 
 <script src="script.js"></script>
 </body>

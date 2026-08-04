@@ -14,6 +14,11 @@
 - If a measurement isn't present in the spec for an element you're building, do not guess or use a default — flag it to the orchestrator as missing, the same as any other open question.
 - Do not substitute relative units (%, em, rem, auto) for a value the spec gives as a fixed px measurement, unless the guideline elsewhere or the spec's "Responsive behavior" section explicitly calls for it.
 
+## Content and assets
+
+- Copy all text content exactly as it appears in the Figma frame — emails, addresses, phone numbers, names, GSTIN/registration numbers. Never paraphrase, auto-correct, or "complete" a value that looks incomplete or unfamiliar.
+- Do not add background colors or containers to logo/icon elements unless the spec explicitly defines one.
+
 ## CSS
 
 - Class naming: kebab-case (not camelCase)
@@ -27,9 +32,4 @@
 
 ## JS
 
-add project-specific conventions here -->
-
-## JS
-
-## JS
 <!-- add project-specific conventions here -->

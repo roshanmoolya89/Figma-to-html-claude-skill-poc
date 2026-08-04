@@ -48,6 +48,22 @@
   startAutoRotate();
 })();
 
+(function mobileMenuToggle() {
+  const toggle = document.querySelector(".mobile-menu-toggle");
+  const nav = document.getElementById("main-navigation");
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener("click", () => {
+    const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!isExpanded));
+    const label = toggle.querySelector(".visually-hidden");
+    if (label) {
+      label.textContent = isExpanded ? "Open navigation menu" : "Close navigation menu";
+    }
+    nav.classList.toggle("is-open");
+  });
+})();
+
 (function newsletterForm() {
   const form = document.getElementById("newsletter-form");
   if (!form) return;
