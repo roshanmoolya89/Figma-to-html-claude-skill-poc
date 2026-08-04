@@ -33,3 +33,8 @@ your-project/
 `/src` stays the single mutable working copy the cache logic diffs against. `/output/vN/` is a copy-on-ship snapshot, not a copy of every intermediate build — only the orchestrator writes there, and only after a page fully passes.
 
 Fill in `/guidelines/*.md` yourself before your first run — the agents treat them as binding, not optional.
+
+# Author
+
+roshanMoolya
+<roshanmoolya89@gmail.com>
