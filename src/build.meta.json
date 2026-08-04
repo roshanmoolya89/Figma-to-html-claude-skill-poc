@@ -1,0 +1,66 @@
+{
+  "home": {
+    "top-utility-bar": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:04:17.807761Z"
+    },
+    "main-header": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:12:21.794302Z"
+    },
+    "hero-carousel": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:04:17.807761Z"
+    },
+    "intro": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:04:17.807761Z"
+    },
+    "products-grid": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:04:17.807761Z"
+    },
+    "interior-solutions": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:04:17.807761Z"
+    },
+    "testimonials": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:04:17.807761Z"
+    },
+    "trusted-orgs": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:04:17.807761Z"
+    },
+    "cta-banner": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:04:17.807761Z"
+    },
+    "newsletter": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:04:17.807761Z"
+    },
+    "footer": {
+      "spec_hash": "c2d25ac50e5f81ca88ab67542fe089f4554de4e1d6c016d5b8954b32b4af882c",
+      "guideline_hash": "2c66b15bde924c911e1d37e6e28021f5ef3d67c70cf673c7d71be5eeee9f090a",
+      "last_built": "2026-08-03T17:12:21.794302Z"
+    }
+  },
+  "rpc": {
+    "page": {
+      "spec_hash": "e48fd34d50a50493f0aef933071ca03867af15008f6bcf7c7e6b63aaf430e4e8",
+      "guideline_hash": "91bff39a9aaac7fbdac971c31ab337184c29d24d18b3cb972f21d42432f43bd1",
+      "last_built": "2026-08-04T08:08:28.530Z"
+    }
+  }
+}

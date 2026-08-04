@@ -1,0 +1,14 @@
+# OS/editor cruft
+.DS_Store
+.vscode/
+Thumbs.db
+*.swp
+
+# Node, if you add any build tooling later
+node_modules/
+npm-debug.log*
+
+# Claude Code — personal/local overrides only (not the shared project config)
+.claude/settings.local.json
+
+/output/v*
