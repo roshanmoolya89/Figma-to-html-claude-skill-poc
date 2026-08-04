@@ -1,14 +1,41 @@
 # OS/editor cruft
 .DS_Store
-.vscode/
 Thumbs.db
 *.swp
 
-# Node, if you add any build tooling later
+# Node, if you add build tooling later
 node_modules/
 npm-debug.log*
 
-# Claude Code — personal/local overrides only (not the shared project config)
+# Claude Code — personal/local overrides only
 .claude/settings.local.json
 
-/output/v*
+# ---- Everything below: generated per-project instance data ----
+# Templates/skeletons stay tracked. Anything a real run produces or
+# fills in with real client content is ignored.
+
+# Real generated specs — keep only the template
+/design/spec-*.md
+!/design/spec-template.md
+
+# spec-shared.md is filled with real tokens per project; the blank
+# starting point is /design/spec-shared.template.md (tracked)
+/design/spec-shared.md
+
+# All cache metadata — accumulates real project-specific hashes
+/design/spec.meta.json
+/src/build.meta.json
+/qa/cache.json
+/guidelines/meta.json
+
+# Real build output, assets, and version history
+/src/*
+!/src/.gitkeep
+/output/*
+!/output/.gitkeep
+!/output/log-template.md
+
+# Real QA reports and journey reports
+/qa/report-*.md
+/reports/*.md
+!/reports/journey-report-template.md

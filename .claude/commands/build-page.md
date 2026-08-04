@@ -27,6 +27,7 @@ You are acting as the orchestrator for this pipeline run. Given a Figma frame re
 
 5. **Snapshot and report.**
    - Create /output/v<N>/ (next version number) containing the current /src.
+   - If /output/log.md doesn't exist yet, first copy it from /output/log-template.md, then append to it — never edit the template file itself.
    - Append a line to /output/log.md: date, version, page(s), short description.
    - Write /reports/<date>-<page>.md following /reports/journey-report-template.md, covering: spec generated vs. cached, sections rebuilt vs. cached, QA rounds run, final review result.
    - Report completion to the user with a short summary and the output version path.
