@@ -15,5 +15,20 @@
 ## HTML
 <!-- add project-specific conventions here -->
 
+## Markup
+- Use only <div> for structural elements — no <header>, <nav>, <footer>, <main>, <section>, <article>, <aside>, or any other HTML5 semantic tag. Use classes to indicate role instead (e.g. <div class="site-header">, <div class="main-nav">).
+- Write XHTML-compliant syntax: all tags and attributes lowercase, all attribute values quoted, all void elements self-closed (<br />, <img />, <input />, <hr />), every tag properly closed and properly nested.
+- Use the XHTML 1.0 Transitional doctype at the top of every page unless told otherwise.
+
+## Content and assets
+- Never source, generate, or substitute an image that wasn't exported from Figma. If an asset is unresolved, use a plain placeholder box only — never real or stock photography.
+- Copy all text content exactly as it appears in the Figma frame — emails, addresses, phone numbers, names, GSTIN/registration numbers. Never paraphrase, auto-correct, or "complete" a value that looks incomplete or unfamiliar.
+- Do not add background colors or containers to logo/icon elements unless the spec explicitly defines one.
+
+## Responsive implementation
+- Use the breakpoint widths defined in spec-shared.md's Breakpoints table — do not introduce your own breakpoints.
+- Below tablet width, layouts default to single-column stacking unless a page's spec says otherwise.
+- Use fixed px values as given in the spec at each breakpoint — do not interpolate or estimate values for breakpoints the spec doesn't explicitly cover.
+
 ## JS
 <!-- add project-specific conventions here -->
