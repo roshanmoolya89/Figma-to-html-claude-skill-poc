@@ -47,8 +47,7 @@ Run the full pipeline for a page with:
 /build-page <figma-frame-link>
 ```
 
----
+## Force a fresh start (ignore all cached results) with `/reset-cache` — it clears cache metadata only, never your actual specs, code, or `/output/` history.ce a fresh start (ignore all cached results) with `/reset-cache` — it clears cache metadata only, never your actual specs, code, or `/output/` history
 
-Developed by **Roshan**.
 <<roshanmoolya89@gmail.co>
 m>
